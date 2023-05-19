@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ficus Ginseng</title>
+    <meta name="description" content="Individual product Page for the website">
+    <meta name="keyword" content="Ficus Ginseng">
+    <meta http-equiv="refresh" content="300">
+    <link rel="stylesheet" href="../../CSS/individual-product.css">
+    <link rel="stylesheet" href="../../CSS/nav.css">
+</head>
+
+<body style="background-image: url('../../IMAGES/Background.png'); background-size: 100%;background-attachment: fixed;">
+    <header>
+        <!-- 'header' class is a container -->
+        <div class="header">
+            
+            <div class="image">
+                <!-- Logo for the website -->
+                <img src="../../IMAGES/logo.png" alt="" class="logo">
+
+            </div>
+            <!-- 'navbar' class contains the headings in the navbar -->
+            <div class="navbar">
+                <!-- anchor tag and unordered list is used add elements in the navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a style="color: #ff8c69;">Products</a></li>
+                        <li><a href="../aboutus.html">About US</a></li>
+                        <li><a href="../form.html">Feedback</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- Displays the cart image at the navbar -->
+            <div class="cart">
+                <img src="../../IMAGES/cart.png" alt="">
+            </div>
+            <div id="cart-items">
+                0
+            </div>
+        </div>
+    </header>
+    <!-- 'spacing' class is used to give space from top -->
+    <div class="spacing"></div>
+    <div class="back-to-products">
+        <a href="../products.html"><button>Back to products</button></a> 
+    </div>
+    <!-- main class to hold every details of the product -->
+    <div class="main">
+        <div class="images">
+            <!-- putting an image -->
+            <img src="../../IMAGES/PLANT-IMAGES/ficus_ginseng.jpg" alt="">
+            <table class="price">
+                <!-- entering prices -->
+                <tr>
+                    <td class="actual">Price: <span class="line">Rs.<span id="actual">6000</span></span></td>
+                    <td class="discount">Offer: Rs. <span id="discount"></span><span class="sale">(15% OFF)</span> </td>
+                </tr>
+            </table>
+        </div>
+        <div class="info">
+            <!-- name of the plant -->
+            <div class="plant-name">
+                Ficus Ginseng
+            </div>
+            <hr>
+            <!-- description of the plant -->
+            <div class="description">
+                Ficus retusa is an evergreen shrub or tree with a rounded, broad head that grows quickly and has a maximum height and spread of 10 meters. It can expand to a diameter of about a meter. The plant grows relatively faster and needs to be kept in proper temperature.
+            </div>
+            <hr>
+            <!-- creating a quantity class for increase and decrease in quantity -->
+            <div class="quantity">
+                <div class="quantity-heading">Quantity:</div>
+                <div class="quantity-calculation">
+                    <img src="../../IMAGES/subtract-symbol.png" alt="" onclick="subtract()" class="quantity-button">
+                    <p id="quantity-number">0</p>
+                    <img src="../../IMAGES/add-symbol.svg" alt="" onclick="add()" class="quantity-button">
+                </div>
+            </div>
+            <hr>
+            <!-- buttons -->
+            <div class="cart-buying">
+                <div><button class="add-to-cart" onclick="addToCart()">Add to Cart</button></div>
+                <div><button class="buy-now" onclick="buyNow()">Buy Now</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- linking extternal javascript -->
+    <script src="../../JS/individual-product.js"></script>
+    <script src="../../JS/cart-items.js"></script>
+
+</body>
+
+</html>

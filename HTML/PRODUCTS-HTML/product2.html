@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fukien Tea Bonsai</title>
+    <meta name="description" content="Individual product Page for the website">
+    <meta name="keyword" content="Fukien tea bonsai">
+    <meta http-equiv="refresh" content="300">
+    <link rel="stylesheet" href="../../CSS/individual-product.css">
+    <link rel="stylesheet" href="../../CSS/nav.css">
+    <style>
+
+    </style>
+</head>
+
+<body style="background-image: url('../../IMAGES/Background.png'); background-size: 100%;background-attachment: fixed;">
+    <header>
+        <!-- 'header' class is a container -->
+        <div class="header">
+
+            <div class="image">
+                <!-- Logo for the website -->
+                <img src="../../IMAGES/logo.png" alt="" class="logo">
+
+            </div>
+            <!-- 'navbar' class contains the headings in the navbar -->
+            <div class="navbar">
+                <!-- anchor tag and unordered list is used add elements in the navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a style="color: #ff8c69;">Products</a></li>
+                        <li><a href="../aboutus.html">About US</a></li>
+                        <li><a href="../form.html">Feedback</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- Displays the cart image at the navbar -->
+            <div class="cart">
+                <img src="../../IMAGES/cart.png" alt="">
+            </div>
+            <div id="cart-items">
+                0
+            </div>
+        </div>
+    </header>
+    <!-- 'spacing' class is used to give space from top -->
+    <div class="spacing"></div>
+    <div class="back-to-products">
+        <a href="../products.html"><button>Back to products</button></a> 
+    </div>
+        <!-- main class to hold every details of the product -->
+    <div class="main">
+         <!-- putting an image -->
+        <div class="images">
+            <img src="../../IMAGES/PLANT-IMAGES/fukien_tea_bonsai.jpg" alt="">
+
+            <table class="price">
+                <!-- entering prices -->
+                <tr>
+                    <td class="actual">Price: <span class="line">Rs.<span id="actual">6000</span></span></td>
+                    <td class="discount">Offer: Rs. <span id="discount"></span><span class="sale">(15% OFF)</span> </td>
+                </tr>
+            </table>
+        </div>
+        <div class="info">            
+            <!-- name of the plant -->
+            <div class="plant-name">
+                Fukien Tea Bonsai
+            </div>
+            <hr>
+            <!-- description of the plant -->
+            <div class="description">
+                Fukien tea bonsai is a shrub with long, drooping branches that can reach a height of 4 meters. During the dry season, it changes its leaf. A tropical evergreen plant native to southern China is called a "Fukien Tea." It is a stunning bonsai plant.
+            </div>
+            <hr>
+            <!-- creating a quantity class for increase and decrease in quantity -->
+            <div class="quantity">
+                <div class="quantity-heading">Quantity</div>
+                <div class="quantity-calculation">
+                    <img src="../../IMAGES/subtract-symbol.png" alt="" onclick="subtract()"
+                        style="width: 15px; margin-right: 10px;">
+                    <p id="quantity-number">0</p>
+                    <img src="../../IMAGES/add-symbol.svg" alt="" onclick="add()"
+                        style="width: 15px; margin-left: 10px;">
+                </div>
+            </div>
+            <hr>
+            <!-- buttons -->
+            <div class="cart-buying">
+                <div><button class="add-to-cart" onclick="addToCart()">Add to Cart</button></div>
+                <div><button class="buy-now" onclick="buyNow()">Buy Now</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- linkign  external javascript -->
+    <script src="../../JS/individual-product.js"></script>
+    <script src="../../JS/cart-items.js"></script>
+</body>
+
+</html>

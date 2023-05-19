@@ -1,0 +1,79 @@
+/* styling to give some blank space from top */
+.footer{
+    margin-top: 100px;
+}
+/* styling to change the background color and align the contents in a certain way */
+.main-footer{
+    background-color: #01010180;
+    height: 260px;
+    display: flex;
+    justify-content: space-around;
+}
+/* styling to change the background color and align the contents in a certain way */
+.below-footer{
+    background-color: #010101b3;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+/* setting the widht of all the sections */
+.section1, .section2, .section3{
+    width: 300px;
+    
+}
+/* styling the logo image */
+.footer-logo{
+    margin-left: 25px;
+    width: 250px;
+    margin-top: 30px;
+}
+
+/* styling the heading in the main-footer */
+.section2-section3-heading{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* styling the elements in the list section */
+.section1-list{
+    list-style-type: none;
+    margin-left: 60px;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 19px;
+    color: #fff;
+}
+/* styling the linking section in the main-footer */
+.section2-section3-list{
+    list-style-type: none;
+    margin-left: 60px;
+    line-height: 30px;
+}
+/* styling all the anchor tags of the linking section */
+.section2-section3-list a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 19px;
+}
+/* adding hover affects to the link */
+.section2-section3-list a:hover{
+    text-decoration: underline;
+}
+
+/* setting the width and color of elements in the below-footer  */
+.below-section1,
+.below-section2,
+.below-section3{
+    width: 350px;
+    color: #fff;
+}
+/* styling for the social section in the below-footer */
+.section20{
+    display: flex;
+    margin: auto;
+    width: 250px;
+    justify-content: space-around;
+}

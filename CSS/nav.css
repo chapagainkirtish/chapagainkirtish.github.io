@@ -1,0 +1,89 @@
+/* setting the values for all content for the web page */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* setting the size of the container and using flex to align various blocks in a same line */
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background: #2D2E1E;
+    position: fixed;
+    z-index: 1;
+}
+
+/* setting the area for image  */
+.image {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    margin-top: 22px;
+
+}
+/* setting the height of the cart container*/
+.cart{
+    height: 100px;
+}
+/* setting the size and position of cart image */
+.cart img{
+    width: 50px;
+    margin-top: 25px;
+    height: 50px;
+}
+
+.logo {
+    width: 50%;
+    height: 60%;
+}
+
+/* styling to align the navigation elements */
+.navbar {
+    width: 64%;
+    height: 100%;
+}
+
+.navbar nav {
+    margin-top: 35px;
+}
+
+/* aligning the li in a horizontal row and removing the style from it */
+nav ul li {
+    display: inline-flex;
+    list-style: none;
+}
+
+/* designing the anchor tag present within the navigation bar */
+nav ul li a {
+    font-size: 25px;
+    padding: 0px 0px;
+    margin: 0 30px;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+/* adding hover effect to the navigation bar */
+nav ul li a:hover {
+    color: #ff8c69;
+}
+
+/* styling so that the color changes at the time of clicking */
+nav ul li a:active {
+    color: #98e592;
+}
+
+.spacing {
+    padding: 50px;
+}
+/* designing the container to contain the number of elements in the cart */
+#cart-items{
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 33px;
+    border-radius: 50%;
+    padding: 3px 5px;
+    background-color: #ff0000;
+    font-size: 20px;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About US</title>
+    <meta name="description" content="About US Page for the website">
+    <meta name="keyword" content="Bonsai Plants">
+    <meta http-equiv="refresh" content="300">
+    <!-- linking nav.css to aboutus.html -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <!-- linking footer.css to aboutus.html -->
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        /* designing the topics */
+        .boonsai {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 50px;
+            color: rgb(22, 98, 22);
+        }
+        /* styling the text for about us */
+        .boonsai-text {
+            width: 80%;
+            text-align: justify;
+            margin: auto;
+            margin-top: 50px;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgb(65, 68, 85);
+            font-family: 'Arial';
+        }
+        /* styling the container that hold member */
+        .members-1 {
+            display: flex;
+            width: 60%;
+            margin: auto;
+            justify-content: space-around;
+            margin-bottom: 60px;
+            margin-top: 50px;
+        }
+
+        /* styling the container that hold member */
+        .members-2 {
+            display: flex;
+            width: 40%;
+            margin: auto;
+            justify-content: space-around;
+        }
+
+        /* styling the images of members */
+        .members-1 img,
+        .members-2 img {
+            width: 160px;
+            height: 200px;
+
+            margin-left: 20px;
+            margin-top: 18px;
+        }
+
+        /* setting the size of the member container and adding border */
+        .member {
+            border: 2px dashed green;
+            width: 200px;
+            height: 295px;
+        }
+
+        /* adding hover effect */
+        .member:hover {
+            background-color: rgb(214, 213, 213);
+            transition: 1s;
+        }
+
+        /* styling all the paragraph tag with class 'name' */
+        p.name {
+            color: rgb(46, 39, 66);
+            margin-top: 6px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        /* styling all the paragraph tag with class 'description' */
+        p.description {
+            color: rgb(88, 75, 126);
+            margin-top: 6px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        /* removing the design from the anchor tag with class 'portfolios' */
+        .portfolios {
+            text-decoration: none;
+        }
+
+        /* adding margin to the about us information */
+        .boonsai-text p {
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<!-- putting an image as a background and fixing it's position -->
+
+<body style="background-image: url('../IMAGES/Background.png'); background-size: 100%;background-attachment: fixed;">
+    <!-- Header contains the navigation bar -->
+    <header>
+        <!-- 'header' class is a container -->
+        <div class="header">
+            <div class="image">
+                <!-- Logo for the website -->
+                <img src="../IMAGES/logo.png" alt="" class="logo">
+            </div>
+            <!-- 'navbar' class contains the headings in the navbar -->
+            <div class="navbar">
+                 <!-- anchor tag and unordered list is used add elements in the navbar -->
+                <nav>
+                    <ul>
+
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a style="color: #ff8c69;">About US</a></li>
+                        <li><a href="./form.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Displays the cart image at the navbar -->
+            <div class="cart">
+                <img src="../IMAGES/cart.png" alt="">
+            </div>
+            <div id="cart-items">
+                0
+            </div>
+        </div>
+    </header>
+    <!-- 'spacing' class is used to give space from top -->
+    <div class="spacing"></div>
+    <!-- 'about-us' contains the main content for about us page -->
+    <div class="about-us">
+    <!-- Horizontal line for the divisions -->
+    <hr style="Width: 80%; margin: 2% 10%;height: 4px; background-color: rgba(41, 94, 69, 0.379);">
+    <!-- topic for the about-us section -->
+    <div class="boonsai">
+        Why Boonsai?
+    </div>
+    <!-- about us information  -->
+    <div class="boonsai-text">
+        <p> I am Kritish Chapagain who have joined forces to build a static website devoted to bonsai trees. My
+            website is a comprehensive resource for individuals interested in learning about and caring for bonsai
+            trees. It was created using HTML, CSS, and JavaScript. The website provides details on the various varieties
+            of bonsai plants as well as advice on how to maintain and care for them. In addition, I have provided a
+            gallery of stunning slider-style Bonsai images so that visitors can appreciate the potential of these tiny
+            trees. I hope that my website will be a useful tool for bonsai fans and give those who are new to the
+            hobby a peek into the world of bonsai.
+        </p>
+        <p>As the soul of longevity embedded in the art of bonsai that we have been handling, boonsai truly strives for
+            a different yet united mark in the field. Courage albeit with cowardice as well we strived with the ancient
+            tradition of handling bonsai blossoming along the genZ marketing that truly widened bonsai marketing. The
+            curiosity in us, enlightened many. </p>
+        <p>Boonsai dedicates in harvesting the happiness through the art of bonsai. That’s why I have provided the facilities
+            of learning bonsai craft from videos on our social medias as well. Our Boonsai team is learned and abundant
+            in knowledge and crafts on experience and has been learning even more ever since its establishment. We
+            provide the accountability and availability of various species of bonsai, ranging from its optimal growth
+            height, types, favourability, smaller gift plants to majestic specimen of each and everything we have to
+            afford.
+        </p>
+        <p>Boonsai has also found itself committing to promote eco-friendly parade of messages digesting and wanning few
+            honourable mentions in numerous papers, articles, magazines, publications and interviews, nothenless
+            supporting our environmental conservation agenda. Our team also has published few books to help beginners
+            and newcomers start their journey into art and craftmanship of bonsai the team has been admired for. The
+            book itself has swooped quite the sale numbers and a reputable position in the field of botanical genre.
+        </p>
+        <p> Our team not only donates 10% of its profit towards the protection of red pandas whose population have been
+            hugely deficit at alarming rate due to illegal encroachment of the species but also volunteers at local tree
+            plantation weekly to help compensate the environment we are truly fond of. I also have been planning with
+            the management team and the leaders to help come up with merch such as stationaries to broaden our vision
+            toward other eyes too, matching the trending aesthetics. </p>
+        <p>Boonsai with the theme- boon of the sky, refers not just to the ancient and present admiration but rather
+            representation and nothing but respect for craftmanship. It not only swoops admiration for the enthusiasts
+            but also ever so lovers of it that would worship bonsai like whispers of prayers to the endless sea and sky,
+            hence the name Boonsai. </p>
+        <p>Live, love, laugh bonsai. </p>
+    </div>
+
+    <!-- Creating a footer section -->
+    <footer>
+        <!-- 'footer' contains everything in the footer -->
+        <div class="footer">
+            <!-- 'main-footer' contains the upper part of the footer that contains logo and sections, flex property is used to create different division sections -->
+            <div class="main-footer">
+                <!-- section1 contains the logo as image and information of company using lists -->
+                <div class="section1">
+                    <img src="../IMAGES/logo.png" alt="company-logo" class="footer-logo">
+                    <ul class="section1-list">
+                        <li>Location: Deerwalk Institute Of Technology</li>
+                        <li>Phone: +977 9860913162</li>
+                        <li>Email: boonsai@gmail.com</li>
+                    </ul>
+                </div>
+                <!-- section2 contains the other webpages of the website lists and link -->
+                <div class="section2">
+                    <p class="section2-section3-heading">Our Company</p>
+                    <ul class="section2-section3-list">
+                        <li><a href="./aboutus.html">About US</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./form.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <!-- section3 contains the need help section designed using lists and link -->
+                <div class="section3">
+
+                    <p class="section2-section3-heading">Need Help?</p>
+                    <ul class="section2-section3-list">
+                        <li><a href="./needhelp.html">Shipping & returns</a></li>
+                        <li><a href="./needhelp.html">Refund Policy</a></li>
+                        <li><a href="./needhelp.html">Terms Of Use</a></li>
+                        <li><a href="./needhelp.html">FAQs</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- 'below-footer' contains the below part of the footer that contains information about copyright, socials and date -->
+            <div class="below-footer">
+                <!-- 'below-section1' contains the copyright informationn -->
+                <div class="below-section1" style="padding-left: 50px; padding-top: 14px;">
+                    Copyright &copy; 2023 | Boonsai
+                </div>
+                <!-- 'below-section' contains the socials link of the website -->
+                <div class="below-section2" style="padding-top: 10px;">
+                    <div class="section20">
+                        <a href="https://www.instagram.com/bonsai_boonofthesky/"><img src="../IMAGES/insta-logo.png" alt="insta-logo" style="width: 28px; height: 28px;"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100090128944219"><img src="../IMAGES/facebook-logo.png" alt="facebook-logo" style="width: 28px; height: 28px;"></a>
+                        <a href="https://twitter.com/Bboonofthesky"><img src="../IMAGES/twitter-logo.png" alt="twitter-logo" style="width: 28px; height: 28px;"></a>
+                    </div>
+                </div>
+                <!-- 'below-section3' contians the date and time -->
+                <div class="below-section3" style="padding-top: 14px;">
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- linking footer.js to about us page -->
+    <script src="../JS/footer.js"></script>
+
+</body>
+
+</html>

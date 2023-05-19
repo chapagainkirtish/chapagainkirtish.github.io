@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cherry Blossom Bonsai</title>
+    <meta name="description" content="Individual product Page for the website">
+    <meta name="keyword" content="Cherry Blossom Bonsai">
+    <meta http-equiv="refresh" content="300">
+    <link rel="stylesheet" href="../../CSS/individual-product.css">
+    <link rel="stylesheet" href="../../CSS/nav.css">
+    <style>
+
+    </style>
+</head>
+
+<body style="background-image: url('../../IMAGES/Background.png'); background-size: 100%;background-attachment: fixed;">
+    <header>
+        <!-- 'header' class is a container -->
+        <div class="header">
+            
+            <div class="image">
+                <!-- Logo for the website -->
+                <img src="../../IMAGES/logo.png" alt="" class="logo">
+            </div>
+            <!-- 'navbar' class contains the headings in the navbar -->
+            <div class="navbar">
+                <!-- anchor tag and unordered list is used add elements in the navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a style="color: #ff8c69;">Products</a></li>
+                        <li><a href="../aboutus.html">About US</a></li>
+                        <li><a href="../form.html">Feedback</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- Displays the cart image at the navbar -->
+            <div class="cart">
+                <img src="../../IMAGES/cart.png" alt="">
+            </div>
+            <div id="cart-items">
+                0
+            </div>
+        </div>
+    </header>
+    <!-- 'spacing' class is used to give space from top -->
+    <div class="spacing"></div>
+    <div class="back-to-products">
+        <a href="../products.html"><button>Back to products</button></a> 
+    </div>
+
+    <div class="main">
+        <div class="images">
+            <img src="../../IMAGES/PLANT-IMAGES/cherry_blossom_bonsai.jpg" alt="">
+            <table class="price">
+                <tr>
+                    <td class="actual">Price: <span class="line">Rs.<span id="actual">6000</span></span></td>
+                    <td class="discount">Offer: Rs. <span id="discount"></span><span class="sale">(15% OFF)</span> </td>
+                </tr>
+            </table>
+        </div>
+        <div class="info">
+            <div class="plant-name">
+                Cherry Blossom Bonsai
+            </div>
+            <hr>
+            <div class="description">
+                In the temperate regions of the northern hemisphere, cherry blossom bonsai are widely grown because of their lovely springtime white or pink blossoms and summertime tasty fruit. It is famous for their mouthwatering fruit in the summer.
+                </div>
+            <hr>
+            <div class="quantity">
+                <div class="quantity-heading">Quantity</div>
+                <div class="quantity-calculation">
+                    <img src="../../IMAGES/subtract-symbol.png" alt="" onclick="subtract()" style="width: 15px; margin-right: 10px;">
+                    <p id="quantity-number">0</p>
+                    <img src="../../IMAGES/add-symbol.svg" alt="" onclick="add()" style="width: 15px; margin-left: 10px;">
+                </div>
+            </div>
+            <hr>
+            <div class="cart-buying">
+                <div><button class="add-to-cart" onclick="addToCart()">Add to Cart</button></div>
+                <div><button class="buy-now" onclick="buyNow()">Buy Now</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="../../JS/individual-product.js"></script>
+    <script src="../../JS/cart-items.js"></script>
+</body>
+
+</html>

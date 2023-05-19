@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <meta name="description" content="Home Page for the website">
+    <meta name="keyword" content="Bonsai Plants">
+    <meta http-equiv="refresh" content="300">
+    <!-- linking nav.css to this page -->
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <!-- linking footer.css to this page -->
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <style>
+        /* setting the background color for main-slider container */
+        .main-slider {
+            background-color: rgba(1, 1, 1, .7);
+        }
+
+        /* setting the width of image container to  80% and aligning it to center */
+        .slider {
+            width: 80%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        /* This sets the image to fit the slider container */
+        #slider-images {
+            width: 100%;
+            height: 50%;
+        }
+
+        /* assigning width and height of the images in the slider */
+        #slider-images img {
+            width: 100%;
+            height: 500px;
+        }
+
+        /* styling a container for the contents with font as 'Arial' */
+        .content1 {
+            width: 90%;
+            margin: auto;
+            background-color: rgba(199, 249, 200, 0.5);
+            margin-top: 70px;
+            justify-content: space-around;
+            border-radius: 25px;
+            padding-bottom: 45px;
+            text-align: justify;
+            padding-left: 50px;
+            padding-right: 50px;
+            line-height: 40px;
+            font-family: 'Arial';
+        }
+
+        /* styling a container for the contents with font as 'Arial' */
+        .content2 {
+            width: 90%;
+            margin: auto;
+            background-color: rgba(199, 249, 200, 0.5);
+            margin-top: 70px;
+            justify-content: space-around;
+            border-radius: 25px;
+            padding-bottom: 80px;
+            font-family: 'Arial';
+        }
+
+        /* styling a container for the contents with font as 'Arial' */
+        .content3 {
+            width: 90%;
+            margin: auto;
+            background-color: rgba(199, 249, 200, 0.5);
+            margin-top: 70px;
+            justify-content: space-around;
+            border-radius: 25px;
+            padding-bottom: 80px;
+            font-family: 'Arial';
+        }
+
+        /* styling a container for the contents with font as 'Arial' */
+        .content4 {
+            width: 90%;
+            margin: auto;
+            background-color: rgba(199, 249, 200, 0.5);
+            margin-top: 70px;
+            justify-content: space-around;
+            border-radius: 25px;
+            padding-bottom: 10px;
+            font-family: 'Arial';
+        }
+
+        /* styling a container for the contents with font as 'Arial' */
+        .content5 {
+            width: 90%;
+            margin: auto;
+            background-color: rgba(199, 249, 200, 0.5);
+            margin-top: 70px;
+            justify-content: space-around;
+            border-radius: 25px;
+            padding-bottom: 10px;
+            height: 500px;
+            font-family: 'Arial';
+        }
+
+        /* styling the heading/ topics for the contents in content1, content2, content3, content4, content5 */
+        .topics {
+            font-size: 50px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 45px;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: underline;
+            padding-top: 30px;
+            color: rgb(3, 105, 30);
+        }
+
+        /* styling a container for holding the products, display: flex to display all the products horizontally */
+        .products {
+            padding: 20px;
+            border: 2px solid;
+            width: 90%;
+            margin: auto;
+            margin-top: 40px;
+            background-color: rgba(250, 252, 231, .4);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* styling the actual template of each individual products */
+        .template {
+            width: 220px;
+            height: 390px;
+            box-shadow: 4px 4px 10px 4px black;
+            font-family: 'Arial';
+            background-color: #fff;
+        }
+
+        /* adding a hover effect to template */
+        .template:hover {
+            background-color: rgb(217, 217, 217);
+            transition: 0.34s;
+            box-shadow: 4px 4px 10px 4px rgb(72, 72, 72);
+        }
+
+        /* styling the image for individual products  */
+        .template-image {
+            width: 90%;
+            margin-left: 11px;
+            margin-top: 8px;
+            max-height: 230px;
+            box-shadow: 1px 1px 5px 1px black;
+            height: 230px;
+        }
+
+        /* styling a container area for information about the plant */
+        .template-info {
+            width: 220px;
+            height: 150px;
+        }
+
+        /* styling the info section for the products */
+        .info {
+            display: flex;
+            width: 100%;
+            position: relative;
+            padding-top: 12px;
+            font-size: 11px;
+        }
+
+        .boonsai {
+            position: absolute;
+            left: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: rgb(83, 83, 83);
+        }
+
+        /* styling the rating section for the products */
+        .rating {
+            position: absolute;
+            right: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: rgb(83, 83, 83);
+        }
+
+        /* styling the plant name for the products */
+        .plant-name {
+            margin-top: 22px;
+            padding-left: 12px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        /* styling the price section */
+        .price {
+            padding-left: 14px;
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #discount {
+            margin-right: 20px;
+        }
+
+        .button {
+            display: flex;
+            width: 95%;
+        }
+
+        /* styling the button for the products*/
+        button {
+            border-radius: 30px;
+            width: 80px;
+            font-weight: bold;
+            padding: 6px 6px;
+            margin-top: 12px;
+            margin-left: 12px;
+            background-color: #aaaaaa;
+            box-sizing: content-box;
+        }
+
+        /* adding hover effect for the button */
+        button:hover {
+            background-color: rgb(2, 118, 46);
+            color: #c8c8c8;
+            transition: 0.2s;
+        }
+
+        .line {
+            text-decoration: line-through;
+            margin-left: 20px;
+        }
+
+        .sale {
+            color: red;
+            margin-left: 5px;
+        }
+
+        /* desinging and aligning the area for the text for blog section */
+        .blog-text {
+            font-size: 16px;
+            width: 90%;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 40px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        /* desinging and aligning the area for the text for about-us section */
+        .aboutus-home {
+            width: 90%;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 40px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        /* desinging and aligning the area for the text for research section */
+        .research-text {
+
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .research1 {
+            width: 49%;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 40px;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        .aboutus-readmore:hover {
+            color: rgb(21, 149, 128);
+        }
+
+        .blog-readmore:hover,
+        .research-readmore:hover {
+            color: rgb(239, 77, 77);
+        }
+
+        /* styling the text for the elements for the classes named words */
+        .words {
+            padding: 20px;
+            background-color: rgb(117, 144, 117);
+            color: #fff;
+            margin: auto;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-family: cursive;
+        }
+
+        /* styling the link part */
+        .products-readmore {
+            width: 150px;
+            float: right;
+            font-size: 20px;
+            margin-right: 60px;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+
+        /* Adding hover effects */
+        .products-readmore:hover {
+            color: red;
+        }
+
+        /* This removes any design that is given to an anchor tag */
+        .no-design {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* styling the container for blog-members */
+        .blog-members {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            height: 420px;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        /* styling the container for blog-member */
+        .blog-member {
+            width: 28%;
+            background-color: #fff;
+            border: 1px solid;
+            margin: 0;
+            padding: 0;
+        }
+
+        .blog-member img {
+            width: 100%;
+            height: 200px;
+            border-bottom: 1px solid black;
+        }
+
+        /* styling the container for blog-info */
+        .blog-info {
+            height: 194px;
+            padding: 20px;
+        }
+
+        /* styling the date of the blog section in home page */
+        .date-plant {
+            color: #ff0000;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        /* styling the anchor tag  */
+        .blog-info a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .blog-paragraph {
+            color: #9b9b9b;
+            font-size: 13px;
+            margin-top: 12px;
+            margin-bottom: 14px;
+        }
+
+        .blog-title {
+            font-size: 19px;
+            font-family: 'Arial';
+        }
+
+        .read-more1 {
+            font-size: 23px;
+        }
+
+        /* adding hover to blog-infor */
+        .blog-info a:hover {
+            color: #ff0000;
+            transition: .35s;
+        }
+    </style>
+</head>
+
+<!-- putting an image as a background and fixing it's position -->
+<body style="background-image: url('./IMAGES/Background.png'); background-size: 100%;background-attachment: fixed;">
+    <!-- Header contains the navigation bar -->
+    <header>
+        <!-- 'header' class is a container -->
+        <div class="header">
+
+            <div class="image">
+                <!-- Logo for the website -->
+                <img src="./IMAGES/logo.png" alt="company-logo" class="logo">
+            </div>
+            <!-- 'navbar' class contains the headings in the navbar -->
+            <div class="navbar">
+                <!-- anchor tag and unordered list is used add elements in the navbar -->
+                <nav>
+                    <ul>
+                        <li><a style="color: #ff8c69;">Home</a></li>
+                        <li><a href="./HTML/blog.html">Blog</a></li>
+                        <li><a href="./HTML/products.html">Products</a></li>
+                        <li><a href="./HTML/aboutus.html">About US</a></li>
+                        <li><a href="./HTML/form.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Displays the cart image at the navbar -->
+            <div class="cart">
+                <img src="./IMAGES/cart.png" alt="">
+            </div>
+            <div id="cart-items">
+                0
+            </div>
+        </div>
+    </header>
+    <!-- 'spacing' class is used to give space from top -->
+    <div class="spacing"></div>
+    <!-- '.main-slider' contains the elements for the slider -->
+    <div class="main-slider">
+        <div class="slider">
+            <!-- images holder for the slider -->
+            <div id="slider-images">
+                <!-- first image for the slider -->
+                <img src="./IMAGES/SLIDER-IMAGES/image6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- '.main-content' is a container that includes everything in the present in the body excluding the header and footer  -->
+    <section class="main-content">
+        <div class="content">
+            <!-- creates a container for the contents for content1 -->
+            <div class="content1">
+                <!-- topic for the content -->
+                <p class="topics px50">Decorate your house with Bonsai</p>
+                <!-- text for the content -->
+                <p style="font-size: 20px;">Miniature trees which are carefully managed and fashioned to resemble the
+                    splendor and beauty of nature are called bonsai plants. These are grown in tiny containers. The
+                    technique of bonsai is indeed an ancient art form that originated in China and Japan and then
+                    expanded to other regions of the world. The Japanese terms "bon" and "sai," which together translate
+                    to "placed in a tray," are just the origins of the English word "bonsai". They are cultivated and
+                    trained to stay small by limiting their root growth, cutting branches and leaves, and wiring the
+                    trunk and branches to shape them. Bonsai trees are genetically identical to ordinary trees. The aim
+                    of bonsai gardening is to produce a balanced and symmetrical small tree that mimics a wild tree.</p>
+            </div>
+
+        </div>
+        <div class="words">Bonsai teaches patience and humility, it reminds us to take life one step at a time and that
+            true beauty takes time to grow.</div>
+
+        <!-- creates a container for the contents for content2 -->
+        <div class="content2">
+            <!-- topic for the content -->
+            <p class="topics px50">Most Popular Products</p>
+            <!-- products containter -->
+            <div class="products">
+                <!-- 'template' class is the individual product on the website -->
+                <a href="./HTML/PRODUCTS-HTML/product1.html" class="no-design">
+                    <div class="template">
+                        <!-- Inserting plant image  -->
+                        <img src="./IMAGES/PLANT-IMAGES/ficus_ginseng.jpg" alt="" class="template-image">
+                        <!-- Inserting details and price for the plant -->
+                        <div class="template-info">
+                            <div class="info">
+                                <!-- Company name -->
+                                <p class="boonsai">Boonsai</p>
+                                <!-- Rating of the plant -->
+                                <p class="rating">Rating: 4.8</p>
+                            </div>
+                            <!-- Plant name -->
+                            <p class="plant-name">Ficus Ginseng</p>
+                            <p class="price">
+                                <!-- Discounted price -->
+                                <span id="discount1"></span>
+                                <!-- Actual price -->
+                                <span class="line">Rs.<span id="actual1">4000</span></span><span class="sale">(15%
+                                    Off)</span>
+                            </p>
+                            <div class="button">
+                                <!-- Read more button -->
+                                <a href="./HTML/PRODUCTS-HTML/product1.html"><button class="read-more">Read
+                                        More</button></a>
+                                <!-- Add to cart button -->
+                                <button class="addToCart" onclick="addToCart()">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./HTML/PRODUCTS-HTML/product2.html" class="no-design">
+                    <div class="template">
+                        <!-- Inserting plant image  -->
+                        <img src="./IMAGES/PLANT-IMAGES/fukien_tea_bonsai.jpg" alt="" class="template-image">
+                        <!-- Inserting details and price for the plant -->
+                        <div class="template-info">
+                            <div class="info">
+                                <!-- Company name -->
+                                <p class="boonsai">Boonsai</p>
+                                <!-- Rating of the plant -->
+                                <p class="rating">Rating: 4.6</p>
+                            </div>
+                            <!-- Plant name -->
+                            <p class="plant-name">Fukien Tea Bonsai</p>
+                            <p class="price">
+                                <!-- Discounted price -->
+                                <span id="discount2"></span>
+                                <!-- Actual price -->
+                                <span class="line">Rs.<span id="actual2">3800</span></span><span class="sale">(15%
+                                    Off)</span>
+                            </p>
+                            <div class="button">
+                                <!-- Read more button -->
+                                <a href="./HTML/PRODUCTS-HTML/product2.html"><button class="read-more">Read
+                                        More</button></a>
+                                <!-- Add to cart button -->
+                                <button class="addToCart" onclick="addToCart()">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./HTML/PRODUCTS-HTML/product3.html" class="no-design">
+                    <div class="template">
+                        <!-- Inserting plant image  -->
+                        <img src="./IMAGES/PLANT-IMAGES/dwarf_jade_bonsai.jpg" alt="" class="template-image">
+                        <!-- Inserting details and price for the plant -->
+                        <div class="template-info">
+                            <div class="info">
+                                <!-- Company name -->
+                                <p class="boonsai">Boonsai</p>
+                                <!-- Rating of the plant -->
+                                <p class="rating">Rating: 4.5</p>
+                            </div>
+                            <!-- Plant name -->
+                            <p class="plant-name">Dwarf Jade Bonsai</p>
+                            <p class="price">
+                                <!-- Discounted price -->
+                                <span id="discount3"></span>
+                                <!-- Actual price -->
+                                <span class="line">Rs.<span id="actual3">5000</span></span><span class="sale">(15%
+                                    Off)</span>
+                            </p>
+                            <div class="button">
+                                <!-- Read more button -->
+                                <a href="./HTML/PRODUCTS-HTML/product3.html"><button class="read-more">Read
+                                        More</button></a>
+                                <!-- Add to cart button -->
+                                <button class="addToCart" onclick="addToCart()">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./HTML/PRODUCTS-HTML/product4.html" class="no-design">
+                    <div class="template">
+                        <!-- Inserting plant image  -->
+                        <img src="./IMAGES/PLANT-IMAGES/cherry_blossom_bonsai.jpg" alt="" class="template-image">
+                        <!-- Inserting details and price for the plant -->
+                        <div class="template-info">
+                            <div class="info">
+                                <!-- Company name -->
+                                <p class="boonsai">Boonsai</p>
+                                <!-- Rating of the plant -->
+                                <p class="rating">Rating: 4.9</p>
+                            </div>
+                            <!-- Plant name -->
+                            <p class="plant-name">Cherry Blossom </p>
+                            <p class="price">
+                                <!-- Discounted price -->
+                                <span id="discount4"></span>
+                                <!-- Actual price -->
+                                <span class="line">Rs.<span id="actual4">8000</span></span><span class="sale">(15%
+                                    Off)</span>
+                            </p>
+                            <div class="button">
+                                <!-- Read more button -->
+                                <a href="./HTML/PRODUCTS-HTML/product4.html"><button class="read-more">Read
+                                        More</button></a>
+                                <!-- Add to cart button -->
+                                <button class="addToCart" onclick="addToCart()">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./HTML/PRODUCTS-HTML/product5.html" class="no-design">
+                    <div class="template">
+                        <!-- Inserting plant image  -->
+                        <img src="./IMAGES/PLANT-IMAGES/japanese_white_pine.jpg" alt="" class="template-image">
+                        <!-- Inserting details and price for the plant -->
+                        <div class="template-info">
+                            <div class="info">
+                                <!-- Company name -->
+                                <p class="boonsai">Boonsai</p>
+                                <!-- Rating of the plant -->
+                                <p class="rating">Rating: 4.7</p>
+                            </div>
+                            <!-- Plant name -->
+                            <p class="plant-name" style="font-size: 20px;">Japanese White Pine</p>
+                            <p class="price">
+                                <!-- Discounted price -->
+                                <span id="discount5"></span>
+                                <!-- Actual price -->
+                                <span class="line">Rs.<span id="actual5">7000</span></span><span class="sale">(15%
+                                    Off)</span>
+                            </p>
+                            <div class="button">
+                                <!-- Read more button -->
+                                <a href="./HTML/PRODUCTS-HTML/product5.html"><button class="read-more">Read
+                                        More</button></a>
+                                <!-- Add to cart button -->
+                                <button class="addToCart" onclick="addToCart()">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a href="./HTML/products.html" class="products-readmore">view all products</a>
+        </div>
+        <!-- creates a container for the contents for content3 -->
+        <div class="content3">
+            <!-- topic for the content -->
+            <p class="topics px50">
+                Read Our Blog&nbsp;
+            </p>
+            <!-- text for the content -->
+            <p class="blog-text">
+                Our blog section contains the latest blog about the technology, it's impact on daily life and business
+                and in the context of Bonsai plants. Technology has had a huge impact on both our daily lives and work
+                activities. In addition to making it easier to learn about the hobby and purchase bonsai plants and
+                equipment, technology has played a significant role in bringing bonsai enthusiasts together. Bonsai
+                enthusiasts may now engage and share knowledge and skills with others on social media platforms like
+                Facebook and Instagram. Internet tutorials and videos have made it feasible for enthusiasts of the
+                bonsai art to learn about the discipline because they can be accessible at any time, from anywhere.
+                Technology has also helped to automate some procedures in bonsai growth, like fertilizing and watering,
+                to boost productivity and convenience for growers. As a whole, technology has had a significant impact
+                on the bonsai industry, making it more accessible, economical, and linked. <a href="./HTML/blog.html"
+                    class="blog-readmore"> Here are some blogs that might catch your interest</a>
+            </p>
+
+            <!-- blog section -->
+            <div class="blog-section">
+                <!-- blog template holder -->
+                <div class="blog-members">
+                    <!-- individual blog template -->
+                    <div class="blog-member">
+                        <!-- image for the template  -->
+                        <img src="./IMAGES/blog1.png" alt="">
+                        <div class="blog-info">
+                            <!-- date for the template -->
+                            <p class="date-plant">
+                                2 Feb 2023 / Bonsai Plant
+                            </p>
+                            <!-- link to the blog -->
+                            <a href="./HTML/blog.html" class="blog-title">How has technology affected life and business,
+                                the impact of technology?</a>
+                            <!-- short content for the blog -->
+                            <p class="blog-paragraph">As people are transcending to the better variables, development is
+                                of
+                                course the fruition of it...
+                            </p>
+                            <!-- link to the blog -->
+                            <a href="./HTML/blog.html" class="read-more1">Read more</a>
+                        </div>
+                    </div>
+                    <!-- individual blog template -->
+                    <div class="blog-member">
+                        <!-- image for the template  -->
+                        <img src="./IMAGES/blog2.png" alt="">
+                        <div class="blog-info">
+                            <!-- image for the template  -->
+                            <p class="date-plant">
+                                28 Jan 2023 / Bonsai Plant
+                            </p>
+                            <!-- link to the blog -->
+                            <a href="./HTML/blog.htmlg" class="blog-title">What are the advantages and disadvantages of
+                                technology on
+                                bonsai plants?</a>
+                            <!-- short content for the blog -->
+                            <p class="blog-paragraph">There are benefits and drawbacks to technology when it comes...
+                            </p>
+                            <!-- link to the blog -->
+                            <a href="./HTML/blog.html" class="read-more1">Read more</a>
+                        </div>
+                    </div>
+                    <!-- individual blog template -->
+                    <div class="blog-member">
+                        <!-- image for the template  -->
+                        <img src="./IMAGES/blog3.png" alt="">
+                        <div class="blog-info">
+                            <!-- image for the template  -->
+                            <p class="date-plant">
+                                10 Jan 2023 / Bonsai Plant
+                            </p>
+                            <!-- link to the blog -->
+                            <a href="./HTML/blog.html" class="blog-title">Beginners guide for bonsai and it's benefit</a>
+                            <!-- short content for the blog -->
+                            <p class="blog-paragraph">Bonsai is the living craftmanship from human beings to nature.
+                                There's nothing more intriguing than a miniature of your favorite tree...
+                            </p>
+                            <!-- link to the blog -->
+                            <a href="./HTML/blog.html" class="read-more1">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- creates a container for the contents for content4 -->
+        <div class="content4">
+            <!-- topic for the content -->
+            <p class="topics px50">About US</p>
+            <!-- text for the content -->
+            <p class="aboutus-home">I am Kritish Chapagain who have joined forces to build a static website
+                devoted to bonsai trees. My website is a comprehensive resource for individuals interested in learning
+                about and caring for bonsai trees. It was created using HTML, CSS, and JavaScript. The website provides
+                details on the various varieties of bonsai plants as well as advice on how to maintain and care for
+                them. In addition, I have provided a gallery of stunning slider-style Bonsai images so that visitors can
+                appreciate the potential of these tiny trees. I hope that my website will be a useful tool for bonsai
+                fans and give those who are new to the hobby a peek into the world of bonsai. <a
+                    href="./HTML/aboutus.html" class="aboutus-readmore">Read more</a> </p>
+
+        </div>
+    </section>
+    <!-- Creating a footer section -->
+    <footer>
+        <!-- 'footer' contains everything in the footer -->
+        <div class="footer">
+            <!-- 'main-footer' contains the upper part of the footer that contains logo and sections, flex property is used to create different division sections -->
+            <div class="main-footer">
+                <!-- section1 contains the logo as image and information of company using lists -->
+                <div class="section1">
+                    <img src="./IMAGES/logo.png" alt="company-logo" class="footer-logo">
+                    <ul class="section1-list">
+                        <li>Location: Deerwalk Institute Of Technology</li>
+                        <li>Phone: +977 9860913162</li>
+                        <li>Email: boonsai@gmail.com</li>
+                    </ul>
+                </div>
+                <!-- section2 contains the other webpages of the website lists and link -->
+                <div class="section2">
+                    <p class="section2-section3-heading">Our Company</p>
+                    <ul class="section2-section3-list">
+                        <li><a href="./HTML/aboutus.html">About US</a></li>
+                        <li><a href="./HTML/blog.html">Blog</a></li>
+                        <li><a href="./HTML/products.html">Products</a></li>
+                        <li><a href="./HTML/form.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <!-- section contains the need help section designed using lists and link -->
+                <div class="section3">
+
+                    <p class="section2-section3-heading">Need Help?</p>
+                    <ul class="section2-section3-list">
+                        <li><a href="./HTML/needhelp.html">Shipping & returns</a></li>
+                        <li><a href="./HTML/needhelp.html">Refund Policy</a></li>
+                        <li><a href="./HTML/needhelp.html">Terms Of Use</a></li>
+                        <li><a href="./HTML/needhelp.html">FAQs</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- 'below-footer' contains the below part of the footer that contains information about copyright, socials and date -->
+            <div class="below-footer">
+                <!-- 'below-section1' contains the copyright informationn -->
+                <div class="below-section1" style="padding-left: 50px; padding-top: 14px;">
+                    Copyright &copy; 2023 | Boonsai
+                </div>
+                <!-- 'below-section' contains the socials link of the website -->
+                <div class="below-section2" style="padding-top: 10px;">
+                    <div class="section20">
+                        <a href="https://www.instagram.com/bonsai_boonofthesky/"><img src="../IMAGES/insta-logo.png" alt="insta-logo" style="width: 28px; height: 28px;"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100090128944219"><img src="../IMAGES/facebook-logo.png" alt="facebook-logo" style="width: 28px; height: 28px;"></a>
+                        <a href="https://twitter.com/Bboonofthesky"><img src="../IMAGES/twitter-logo.png" alt="twitter-logo" style="width: 28px; height: 28px;"></a>
+                    </div>
+                </div>
+                <!-- 'below-section3' contians the date and time -->
+                <div class="below-section3" style="padding-top: 14px;">
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- linking slider.js to home page -->
+    <script src="./JS/slider.js"></script>
+    <!-- linking footer.js to home page -->
+    <script src="./JS/footer.js"></script>
+    <!-- linking cart-items to home page -->
+    <script src="./JS/cart-items.js"></script>
+    <script>
+        /* Creating an array named actuals and storing all the id for actual price of the product*/
+        var actuals = ["actual1", "actual2", "actual3", "actual4", "actual5"];
+        /* Creating an array named discountss and storing all the id for discounted price of the product*/
+        var discounts = ["discount1", "discount2", "discount3", "discount4", "discount5"];
+
+        // Using for loop 
+        for (var i = 0; i < actuals.length; i++) {
+            // Selecting the space inside the html pagee using it's id
+            var actual = document.getElementById(actuals[i]).innerHTML;
+            // Calculating the value of discounted price
+            var discounted = actual - ((15 * actual) / 100);
+            // Inserting the disocunted value by selecting the space of discounted id
+            document.getElementById(discounts[i]).innerHTML = "Rs." + discounted;
+
+        }
+    </script>
+</body>
+
+</html>

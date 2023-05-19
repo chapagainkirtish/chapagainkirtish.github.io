@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products</title>
+    <meta name="description" content="Products Page for the website">
+    <meta name="keyword" content="Bonsai Plants">
+    <meta http-equiv="refresh" content="300">
+    <!-- Linking the css files in this page -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/products.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+
+<!-- putting an image as a background and fixing it's position -->
+<body style="background-image: url('../IMAGES/Background.png'); background-size: 100%;background-attachment: fixed;">
+    <!-- Header contains the navigation bar -->
+    <header>
+        <!-- 'header' class is a container -->
+        <div class="header">
+            
+            <div class="image">
+                <!-- Logo for the website -->
+                <img src="../IMAGES/logo.png" alt="company-logo" class="logo">
+
+            </div>
+            <!-- 'navbar' class contains the headings in the navbar -->
+            <div class="navbar">
+                <!-- anchor tag and unordered list is used add elements in the navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a style="color: #ff8c69;">Products</a></li>
+                        <li><a href="./aboutus.html">About US</a></li>
+                        <li><a href="./form.html">Feedback</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- Displays the cart image at the navbar -->
+            <div class="cart">
+                <img src="../IMAGES/cart.png" alt="">
+            </div>
+            <div id="cart-items">
+                0
+            </div>
+        </div>
+    </header>
+    <!-- 'spacing' class is used to give space from top -->
+    <div class="spacing"></div>
+    <!-- 'main' class is a container to hold the the 'headline' and 'products'  -->
+    <div class="main">
+        <div class="headline">
+            <p id="text">Buy our products for a cheaper price <span style="color: red; margin-left: 20px;">(15% OFF FOR
+                    TODAY ONLY!!)</span></p>
+        </div>
+        <!-- 'products' class creates a box that holds the template for each individual product -->
+        <div class="products">
+            <!-- 'template' class is the individual product on the website -->
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/ficus_ginseng.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.8</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Ficus Ginseng</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount1"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual1">4000</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product1.html"><button class="read-more">View Details</button></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/fukien_tea_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.6</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Fukien Tea Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount2"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual2">3800</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product2.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/dwarf_jade_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.5</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Dwarf Jade Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount3"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual3">5000</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product3.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/cherry_blossom_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.9</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Cherry Blossom </p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount4"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual4">8000</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product4.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/japanese_white_pine.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.7</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name" style="font-size: 20px;">Japanese White Pine</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount5"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual5">7000</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product5.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- 'products' class creates a box that holds the template for each individual product -->
+        <div class="products">
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/crab_apple_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.4</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Crab Apple Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount6"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual6">2700</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product6.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/juniper_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.2</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Juniper Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount7"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual7">3200</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product7.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/black_thorn_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.3</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name" style="font-size: 21px;">Black Thorn Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount8"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual8">4300</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product8.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/citrus_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.0</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Citrus Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount9"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual9">5000</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product9.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/hibiscus_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 3.9</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Hibiscus Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount10"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual10">5700</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product10.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 'products' class creates a box that holds the template for each individual product -->
+        <div class="products">
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/oak_quercus.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.0</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name" style="font-size: 20px;">Oak Quercus Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount11"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual11">2000</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product11.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/azalea_bonsai.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 3.2</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Azalea Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount12"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual12">3500</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product12.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/paperflower_bonsai.webp" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 3.9</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Paperflower Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount13"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual13">4100</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product13.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/snow_rose_bonsai.webp" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 4.1</p>
+                    </div>
+                    <!-- Plant name -->
+                    <p class="plant-name">Snow Rose Bonsai</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount14"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual14">4900</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product14.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="template">
+                <!-- Inserting plant image  -->
+                <img src="../IMAGES/PLANT-IMAGES/hawaiian_umbrella.jpg" alt="" class="template-image">
+                <!-- Inserting details and price for the plant -->
+                <div class="template-info">
+                    <div class="info">
+                        <!-- Company name -->
+                        <p class="boonsai">Boonsai</p>
+                        <!-- Rating of the plant -->
+                        <p class="rating">Rating: 3.7</p>
+                    </div>
+                    <!-- Plant name --> 
+                    <p class="plant-name">Hawaiian Umbrella</p>
+                    <p class="price">
+                        <!-- Discounted price -->
+                        <span id="discount15"></span>
+                        <!-- Actual price -->
+                        <span class="line">Rs.<span id="actual15">6100</span></span><span class="sale">(15% OFF)</span>
+                    </p>
+                    <div class="button">
+                        <!-- Read more button -->
+                        <a href="./PRODUCTS-HTML/product15.html"><button class="read-more">View Details</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="main-footer">
+                <div class="section1">
+                    <img src="../IMAGES/logo.png" alt="company-logo" class="footer-logo">
+                    <ul class="section1-list">
+                        <li>Location: Deerwalk Institute Of Technology</li>
+                        <li>Phone: +977 9860913162</li>
+                        <li>Email: boonsai@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="section2">
+                    <p class="section2-section3-heading">Our Company</p>
+                    <ul class="section2-section3-list">
+                        <li><a href="./aboutus.html">About US</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./form.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="section3">
+
+                    <p class="section2-section3-heading">Need Help?</p>
+                    <ul class="section2-section3-list">
+                        <li><a href="./needhelp.html">Shipping & returns</a></li>
+                        <li><a href="./needhelp.html">Refund Policy</a></li>
+                        <li><a href="./needhelp.html">Terms Of Use</a></li>
+                        <li><a href="./needhelp.html">FAQs</a></li>
+                    </ul>
+
+                </div>
+                <!-- <div class="section4">
+                <p class="section4-heading">Sign Up</p>
+                <form>
+                    <input type="text" placeholder="email">
+                    <input type="password" placeholder="Password"><br>
+                    <button>Sign Up</button>
+                </form>
+            </div> -->
+            </div>
+            <div class="below-footer">
+                <div class="below-section1" style="padding-left: 50px; padding-top: 14px;">
+                    Copyright &copy; 2023 | Boonsai
+                </div>
+                <div class="below-section2" style="padding-top: 10px;">
+                    <div class="section20">
+                        <a href="https://www.instagram.com/bonsai_boonofthesky/"><img src="../IMAGES/insta-logo.png" alt="insta-logo" style="width: 28px; height: 28px;"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100090128944219"><img src="../IMAGES/facebook-logo.png" alt="facebook-logo" style="width: 28px; height: 28px;"></a>
+                        <a href="https://twitter.com/Bboonofthesky"><img src="../IMAGES/twitter-logo.png" alt="twitter-logo" style="width: 28px; height: 28px;"></a>
+                    </div>
+                </div>
+                <div class="below-section3" style="padding-top: 14px;">
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/footer.js"></script>
+    <!-- Adding internal javscript -->
+    <script>
+        /* Creating an array named actuals and storng all the id for actual price of the product*/
+        var actuals = ["actual1", "actual2", "actual3", "actual4", "actual5", "actual6", "actual7", "actual8", "actual9", "actual10", "actual11", "actual12", "actual13", "actual14", "actual15"];
+        /* Creating an array named discountss and storng all the id for discounted price of the product*/
+        var discounts = ["discount1", "discount2", "discount3", "discount4", "discount5", "discount6", "discount7", "discount8", "discount9", "discount10", "discount11", "discount12", "discount13", "discount14", "discount15"];
+
+        // Using for loop 
+        for (var i = 0; i < actuals.length; i++) {
+            // Selecting the space inside the html pagee using it's id
+            var actual = document.getElementById(actuals[i]).innerHTML;
+            // Calculating the value of discounted price
+            var discounted = actual - ((15 * actual) / 100);
+            // Inserting the disocunted value by selecting the space of discounted id
+            document.getElementById(discounts[i]).innerHTML = "Rs." + discounted;
+
+        }
+    </script>
+    <!-- linking footer.js to products page -->
+    <script src="../JS/footer.js"></script>
+</body>
+
+</html>

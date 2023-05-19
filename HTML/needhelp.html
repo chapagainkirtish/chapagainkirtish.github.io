@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Need help?</title>
+    <meta name="description" content="Need Help page for the website">
+    <meta name="keyword" content="Need Help">
+    <meta http-equiv="refresh" content="300">
+    <!-- linking nav.css to needhelp page -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <style>
+        /* styling the main container */
+        .need-help-main {
+            width: 80%;
+            margin: auto;
+            background-color: #ffffff80;
+            border: 2px dashed;
+            margin-top: 70px;
+            padding: 60px 80px;
+        }
+
+        /* designing the heading for the main container */
+        .need-help-heading {
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-family: 'Candara';
+            font-weight: bold;
+            color: #014061;
+        }
+
+        /* designing the subheadings */
+        .subheading1 {
+            text-decoration: underline;
+            font-size: 27px;
+            color: #4c3939;
+            margin-bottom: 15px;
+            margin-top: 40px;
+        }
+        
+        /* designing the text paragraph  */
+        .need-help-text {
+            font-family: 'Arial';
+            text-align: justify;
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        /* Styling the question of FAQs*/
+        .inner-subheading {
+            font-size: 21px;
+            margin-bottom: 10px;
+            color: rgb(114, 100, 100);
+        }
+
+        /* Styling the answers of FAQs */
+        .inner-need-help-text {
+            font-size: 17px;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+        /* styling the horizontal line */
+        hr{
+            margin-top: 20px;
+            height: 10px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<!-- putting an image as a background and fixing it's position -->
+
+<body style="background-image: url('../IMAGES/Background.png'); background-size: 100%;background-attachment: fixed;">
+    <!-- Header contains the navigation bar -->
+    <header>
+        <!-- 'header' class is a container -->
+        <div class="header">
+            <div class="image">
+                <!-- Logo for the website -->
+                <img src="../IMAGES/logo.png" alt="" class="logo">
+            </div>
+            <!-- 'navbar' class contains the headings in the navbar -->
+            <div class="navbar">
+                <!-- anchor tag and unordered list is used add elements in the navbar -->
+                <nav>
+                    <ul>
+
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./aboutus.html">About US</a></li>
+                        <li><a href="./form.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Displays the cart image at the navbar -->
+            <div class="cart">
+                <img src="../IMAGES/cart.png" alt="">
+            </div>
+            <div id="cart-items">
+                0
+            </div>
+        </div>
+    </header>
+    <!-- 'spacing' class is used to give space from top -->
+    <div class="spacing"></div>
+
+    <!-- creating a main container to contain all the contents -->
+    <div class="need-help-main">
+        <!-- the main heading -->
+        <div class="need-help-heading">Welcome to our Need Help section! Here, you will find information on our shipping
+            and returns policy, refund policy, terms of use, and some FAQs.</div>
+            <hr>
+            <div class="subheading">
+            <!-- subbheading or the question title -->
+            <p class="subheading1">
+                Shipping and returns
+            </p>
+            <!-- answers for the questions -->
+            <p class="need-help-text">
+                We are dedicated to offering our customers fast and efficient shipping. On our website, you can find the
+                estimated delivery timeframes for the many shipping choices we provide. If for any reason you are
+                unsatisfied with your purchase, you have 7 days from the date of delivery to return it for a full refund
+                or exchange. Please note that the customer is responsible for paying the full cost of return shipping.
+            </p>
+            <hr>
+            <!-- subbheading or the question title -->
+            <p class="subheading1">
+                Refund policy
+            </p>
+            <!-- answers for the questions -->
+            <p class="need-help-text">
+                Your complete satisfaction with your purchase is our goal. Within 7 days of receiving your order, you
+                may return it for a full refund if you're unsatisfied with it. The first payment method will receive
+                refunds. Please be aware that the customer is responsible for paying the full cost of return shipping.
+            </p>
+            <hr>
+            <!-- subbheading or the question title -->
+            <p class="subheading1">
+                Terms of use
+            </p>
+            <!-- answers for the questions -->
+            <p class="need-help-text">
+                By accessing and using our website, you agree to be bound by the terms and conditions set forth in this
+                agreement. We reserve the right to modify these terms and conditions at any time, and it is your
+                responsibility to periodically review this page for updates.
+            </p>
+            <hr>
+            <!-- subbheading or the question title -->
+            <p class="subheading1">
+                FAQs
+            </p>
+            <!-- answers for the questions -->
+            <div class="need-help-text">
+                <!-- questions for FAQs -->
+                <div class="inner-subheading">
+                    1. What is a bonsai plant?
+                </div>
+                <!-- answers for FAQs -->
+                <div class="inner-need-help-text">
+                    A miniature tree that has been grown and trained in a small pot is called a bonsai plant. The goal
+                    of bonsai is to methodically shape, wire, and prune the branches, leaves, and trunk to create a
+                    miniature, lifelike replica of an adult tree. There are many different types of bonsai plants,
+                    including juniper, pine, azalea, and ficus. Each species has its own unique characteristics and
+                    requirements for care.
+                </div>
+                 <!-- questions for FAQs -->
+                <div class="inner-subheading">
+                    2.How do I care for my bonsai plan and how frequently do I need to repot it?
+                </div>
+                <!-- answers for FAQs -->
+                <div class="inner-need-help-text">
+                    A bonsai plant needs regular watering, feeding, pruning, and repotting in order to be taken care of.
+                    Additionally, certain daylight and temperature requirements apply to bonsai plants. Studying the
+                    particular requirements of your chosen bonsai plant species is essential. Every one in three years,
+                    bonsai plants should normally be repotted. The size of the root system and the species can, however,
+                    affect how frequently plants need to be replanted.
+                </div>
+                 <!-- questions for FAQs -->
+                <div class="inner-subheading">
+                    3. How do I shape my bonsai plant?
+                </div>
+                <!-- answers for FAQs -->
+                <div class="inner-need-help-text">
+                    A bonsai plant is shaped by wiring and pruning the branches to get the desired shape. When sculpting
+                    a bonsai plant, it's important to be careful and patient. Overpruning or incorrect wiring may result
+                    in tree damage.
+                </div>
+                <!-- questions for FAQs -->
+                <div class="inner-subheading">
+                    4. Are bonsai trees challenging to maintain?
+                </div>
+                <!-- answers for FAQs -->
+                <div class="inner-need-help-text">
+                    Although bonsai trees need routine maintenance, with the right information and care, they can be rather simple to take care of. To make sure that you are giving the proper care and conditions, it is crucial to conduct research on the specific requirements of your bonsai plant species.
+                </div>
+                <!-- questions for FAQs -->
+                <div class="inner-subheading">
+                    5. Can I grow bonsai plants indoors?
+                </div>
+                <!-- answers for FAQs -->
+                <div class="inner-need-help-text">
+                    Yes, you can grow a variety of bonsai plant species inside. To supply the proper light and temperature conditions for your bonsai plant species, you must first understand the particular requirements of that species.
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,82 @@
+/* styling the division */
+.real-main {
+    background-color: #fafce766;
+    width: 65%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    justify-content: center;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px 2px #0000001a;
+}
+
+/* styling the box that stores the slider and form */
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-left: 55px;
+}
+
+/* styling the form part, giving space around the form section */
+.form {
+    padding: 5% 3%;
+    width: 49%;
+    margin-right: 40px;
+}
+
+/* increasing the padding of each individual td */
+.form table tr td {
+    padding: 1% 0%;
+    padding-right: 40px;
+}
+
+/* increasing the padding of each individual td */
+input {
+    padding: 1.5% 0%;
+}
+
+/* styling to give space from bottom of the form */
+table {
+    margin-bottom: 8px;
+}
+
+/* styling to set the font size of the element within it */
+label {
+    font-size: 17px;
+    padding-left: 7px;
+}
+
+/* styling the button for submisson */
+button {
+    margin-top: 2%;
+    width: 94%;
+    padding: 1% 0%;
+    background-color: #6565ff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* adding the hovering effect to the submission button */
+button:hover {
+    background-color: #313199;
+}
+
+.slider {
+    width: 100%;
+
+}
+
+.main-slider {
+    width: 48%;
+}
+
+/* setting the image position and rounding the image for the slider */
+.main-slider img {
+    width: 380px;
+    margin-top: 10%;
+    border-radius: 40px;
+    margin-left: 20px;
+}

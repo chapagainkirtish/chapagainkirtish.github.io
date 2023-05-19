@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedback</title>
+    <meta name="description" content="Feedback page for the website">
+    <meta name="keyword" content="Bonsai Plants feedback">
+    <meta http-equiv="refresh" content="300">
+    <!-- linking nav.css to form page -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <!-- linking form.css to form page -->
+    <link rel="stylesheet" href="../CSS/form.css">
+    <!-- linking footer.css to form page -->
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+</head>
+
+<!-- putting an image as a background and fixing it's position -->
+
+<body style="background-image: url('../IMAGES/Background.png'); background-size: 100%;background-attachment: fixed;">
+    <!-- Header contains the navigation bar -->
+    <header>
+        <!-- 'header' class is a container -->
+        <div class="header">
+            <div class="image">
+                <!-- Logo for the website -->
+                <img src="../IMAGES/logo.png" alt="" class="logo">
+            </div>
+            <!-- 'navbar' class contains the headings in the navbar -->
+            <div class="navbar">
+                <!-- anchor tag and unordered list is used add elements in the navbar -->
+                <nav>
+                    <ul>
+
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./aboutus.html">About US</a></li>
+                        <li><a style="color: #ff8c69;">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Displays the cart image at the navbar -->
+            <div class="cart">
+                <img src="../IMAGES/cart.png" alt="">
+            </div>
+            <div id="cart-items">
+                0
+            </div>
+        </div>
+    </header>
+    <!-- 'spacing' class is used to give space from top -->
+    <div class="spacing"></div>
+    <!-- creating a division to store all the contents -->
+    <div class="real-main">
+        <!-- creating the box to hold the slider and form -->
+        <div class="main">
+            <!-- '.main-slider' contains the elements for the slider -->
+            <div class="main-slider">
+                <div class="slider">
+                    <!-- images holder for the slider -->
+                    <div id="slider-plant-images">
+                        <!-- first image for the slider -->
+                        <img src="../IMAGES/FORM-IMAGES/image1.jpg" alt="" class="form-image">
+                    </div>
+                </div>
+            </div>
+            <!-- creating a division for the form -->
+            <div class="form">
+                <!-- form heading -->
+                <h1 style="padding-bottom: 5%; padding-left: 16%; color: rgba(3, 44, 40, 0.57);">Feedback Form</h1>
+                <!-- using form tag and calling a function just after clicking the submit button-->
+                <form onsubmit="validatetform()" name="myform">
+                    <!-- table to align the items in the proper way -->
+                    <table>
+                        <tr>
+                            <td><label for="fname">First Name</label></td>
+                            <td><label for="lname">Last Name</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="fname" id="fname" style="padding:3% 0%;"></td>
+                            <td><input type="text" name="lname" id="lname" style="padding:3% 0%;"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" name="email" id="email" style="width: 376px;"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><label for="phone">Phone Number</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="phone" id="phone" style="width: 376px;"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td colspan="2"><label for="suggestion">Suggestions</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea name="suggestion" id="suggestion" name="suggestion" cols="43" rows="6"
+                                    style="width: 376px;"></textarea></td>
+                        </tr>
+                    </table>
+                    <button>Submit</button>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Creating a footer section -->
+    <footer>
+        <!-- 'footer' contains everything in the footer -->
+        <div class="footer">
+            <!-- 'main-footer' contains the upper part of the footer that contains logo and sections, flex property is used to create different division sections -->
+            <div class="main-footer">
+                <!-- section1 contains the logo as image and information of company using lists -->
+                <div class="section1">
+                    <img src="../IMAGES/logo.png" alt="company-logo" class="footer-logo">
+                    <ul class="section1-list">
+                        <li>Location: Deerwalk Institute Of Technology</li>
+                        <li>Phone: +977 9860913162</li>
+                        <li>Email: boonsai@gmail.com</li>
+                    </ul>
+                </div>
+                <!-- section2 contains the other webpages of the website lists and link -->
+                <div class="section2">
+                    <p class="section2-section3-heading">Our Company</p>
+                    <ul class="section2-section3-list">
+                        <li><a href="./aboutus.html">About US</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./form.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <!-- section3 contains the need help section designed using lists and link -->
+                <div class="section3">
+
+                    <p class="section2-section3-heading">Need Help?</p>
+                    <ul class="section2-section3-list">
+                        <li><a href="./needhelp.html">Shipping & returns</a></li>
+                        <li><a href="./needhelp.html">Refund Policy</a></li>
+                        <li><a href="./needhelp.html">Terms Of Use</a></li>
+                        <li><a href="./needhelp.html">FAQs</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- 'below-footer' contains the below part of the footer that contains information about copyright, socials and date -->
+            <div class="below-footer">
+                <!-- 'below-section1' contains the copyright informationn -->
+                <div class="below-section1" style="padding-left: 50px; padding-top: 14px;">
+                    Copyright &copy; 2023 | Boonsai
+                </div>
+                <!-- 'below-section' contains the socials link of the website -->
+                <div class="below-section2" style="padding-top: 10px;">
+                    <div class="section20">
+                        <a href="https://www.instagram.com/bonsai_boonofthesky/"><img src="../IMAGES/insta-logo.png" alt="insta-logo" style="width: 28px; height: 28px;"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100090128944219"><img src="../IMAGES/facebook-logo.png" alt="facebook-logo" style="width: 28px; height: 28px;"></a>
+                        <a href="https://twitter.com/Bboonofthesky"><img src="../IMAGES/twitter-logo.png" alt="twitter-logo" style="width: 28px; height: 28px;"></a>
+                    </div>
+                </div>
+                <!-- 'below-section3' contians the date and time -->
+                <div class="below-section3" style="padding-top: 14px;">
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- linking footer.js to form page -->
+    <script src="../JS/footer.js"></script>
+    <!-- linking slider.js to form page -->
+    <script src="../JS/slider.js"></script>
+    <!-- internal link for Javascript -->
+    <script>
+        // creating a validateform() function
+        function validatetform(){
+            // storing the value entered into the variables
+            var fname = document.forms["myform"]["fname"].value;
+            var lname = document.forms["myform"]["lname"].value;
+            var email = document.forms["myform"]["email"].value;
+            var phone = document.forms["myform"]["phone"].value;
+            var suggestion  = document.forms["myform"]["suggestion"].value;
+
+            /* using if condition to check the values in the variables
+                and if found empty, an alert message is displayed*/
+            if (fname == "" || lname == "" || email == "" || phone == "" || suggestion == ""){
+                alert("Empty fields found. Please fill the form before submitting.")
+            }
+            // if all value are filled, it displays an alert box for the response
+            else{
+                alert("Thank you for your response " + fname + " " + lname)
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
